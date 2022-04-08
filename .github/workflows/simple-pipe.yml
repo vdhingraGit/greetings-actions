@@ -37,7 +37,7 @@ jobs:
     
     steps:
     - name: Download candidate artifacts
-      uses: actions/download-artifacts@v2
+      uses: actions/download-artifact@v2
       with:
         name: greetings-jar
     - shell: bash
