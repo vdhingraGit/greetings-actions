@@ -19,14 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    -name: Print warning message
+    - name: Print warning message
       run: |
-        echo: "::Warning::This version is for debugging only."
-    -name: Dump context for runner
+        echo "::Warning::This version is for debugging only."
+    - name: Dump context for runner
       env:
         RUNNER_CONTEXT: ${{ toJSON(runner) }}
       run:
-      echo "::debug::Runner context is above."
+        echo "::debug::Runner context is above."
       
       
   build:
