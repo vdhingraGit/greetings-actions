@@ -12,7 +12,7 @@ public class echoMsg  {
       if (args.length > 0) {
          System.out.println("Here are the arguments you passed in.");
          for (String s: args) {
-             System.out.println(s);
+             System.out.println("s: "+s);
          }
       }
       else {
