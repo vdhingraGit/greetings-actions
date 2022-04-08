@@ -20,7 +20,7 @@ jobs:
     
     steps:
     -name: Print warning message
-      run:
+      run: |
         echo: "::Warning::This version is for debugging only."
     -name: Dump context for runner
       env:
